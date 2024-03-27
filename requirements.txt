@@ -1,4 +1,4 @@
 pubnub
 py7zr
 langchain
-pinecone
+pinecone-client

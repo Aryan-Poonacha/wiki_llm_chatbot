@@ -20,7 +20,7 @@ embeddings = chain.ingest(data).embed()
 
 # Initialize Pinecone
 pc = pinecone.Pinecone(api_key='YOUR_API_KEY')
-index = pc.Index('example-index')
+index = pc.Index('yakuza-wiki-index')
 
 # Store embeddings in Pinecone
 index.upsert(embeddings)
