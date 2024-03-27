@@ -1,0 +1,4 @@
+pubnub
+py7zr
+langchain
+pinecone
