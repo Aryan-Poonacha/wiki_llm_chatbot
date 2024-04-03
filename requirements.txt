@@ -1,4 +1,11 @@
 pubnub
 py7zr
 langchain
+langchain-community
+langchain-core
 pinecone-client
+pinecone-datasets
+langchain-pinecone
+langchain-openai
+unstructured
+python-dotenv

@@ -1,8 +1,12 @@
+from dotenv import load_dotenv
+
 from pubnub.callbacks import SubscribeCallback
 from pubnub.enums import PNStatusCategory, PNOperationType
 from pubnub.pnconfiguration import PNConfiguration
 from pubnub.pubnub import PubNub
 import os
+
+load_dotenv()
 
 pnconfig = PNConfiguration()
 
