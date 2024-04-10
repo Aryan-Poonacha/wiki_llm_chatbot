@@ -1,0 +1,157 @@
+Top Responses:
+Text: While working out in Hamakita Park, [[Kyoko Amasawa]] warns her about a potential attack at the Dance Jam finals, which does not deter her in the slightest. Yagami later approaches her and informs her of Nishizono's depressed state after learning about Hiiragi, and request she cheer her up, but Norizuki is not sympathetic and continues training. Norizuki changes her mind, and goes to [[Seiryo High School]] to see Nishizono's state for herself. <b>Norizuki tells Nishizono of how she was inspired by the Rabbits and that she is training to earn their respect.</b> At the Dance Jam, Yagami and Amasawa once again warn her about the attack, but she is still not wanting to back out, and gives them possible locations for an attack. After a fight breaks out, right before the hired thug injures her, [[Kaoru Komekado]] tackles him and saves her. A police officer asks what happened, and Norizuki convinces him it was part of the show., Score: 12.035328
+Text: As Sakai leaves via rooftop, he is spotted and chased by Shinada. Sakai brings Shinada, [[Koichi Takasugi]] and [[Uno]] to a more desolate area, talking about the greatest play a baseball player could make: a sacrifice fly, where one hits the ball far away so his teammates can score points but the batter themselves doesn't get on a base. Apologizing to Shinada, Sakai fights him. <b>Sakai is defeated, and tells Shinada about how he felt that the team did Shinada wrong by tarnishing his talent.</b> Sakai reveals the Nagoya Family are the ones who framed Shinada for sign stealing and match fixing and he was was sacrificed for Nagoya, but as Sakai is about to reveal who is in charge of the Nagoya family, someone pushes a cement mixer off a nearby building onto Shinada, but Sakai pushes him out of the way, getting crushed instead. {{EndSpoilers}}
+
+== Fighting Style ==
+Sakai wields an iron pipe as a weapon during his boss fight, which he holds in his left hand. He fights in a crude fashion, and has a limited moveset., Score: 6.824997
+Text: |speaker = Koyuki to [[Kana Momonogi]]
+}}
+
+&lt;/references&gt;
+
+[[Category:Hostesses]]
+[[Category:Platinum Hostesses]]
+[[Category:Four Shine]]
+[[Category:Yakuza Kiwami 2 Characters]]
+[[Category:Yakuza Kiwami 2 Hostesses]]
+[[Category:Yakuza: Like a Dragon Characters]]
+[[Category:Like a Dragon: Infinite Wealth Characters]]
+[[Category:Ryu Ga Gotoku Online Characters]]</text>
+      <sha1>0p4bqk730jvq4aopnrl0kgvvqx8l6xf</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kanzaki</title>
+    <ns>0</ns>
+    <id>8883</id>
+    <revision>
+      <id>145773</id>
+      <parentid>139247</parentid>
+      <timestamp>2023-07-12T23:15:05Z</timestamp>
+      <contributor>
+        <username>Kokushii</username>
+        <id>52783740</id>
+      </contributor>
+      <origin>145773</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2638" sha1="5vdbn4ej7dj7voulhi9iwqd4vjmf7yw" xml:space="preserve">{{Character Infobox
+|jp = ç¥�å´�
+|rom = Kanzaki
+|img = YK2 - Character Profile - Kanzaki.png
+|nationality = Japanese
+|height = {{EstHeight|175|YK2}}
+|relationships = *[[Youda]] (former mentor)
+*[[Kirara Asuka]] (former employee)
+*[[Kana Momonogi]] (former employee)
+*[[Aika]] (former employee)
+*[[Shoko Takahashi]] (former employee)
+*[[Yua Mikami]] (former employee)
+*[[Yuki]] (rival, former employer)
+*[[Buono Isozaki]] (accomplice)
+|occupation = *Owner of [[Club Sunshine]]
+*Chairman of the [[Kanzaki Group]]
+|affiliation = *[[Club Sunshine]]
+*[[Kanzaki Group]]
+|appears_in = [[Yakuza Kiwami 2]]
+}}
+'''Kanzaki''' ({{JP|ç¥�å´�}}) is a character featured in ''[[Yakuza Kiwami 2]]''. He is the new owner of [[Club Sunshine]]. ==Background==
+Kanzaki worked in [[Club Sunshine]] under [[Yuki]] and [[Youda]]. <b>He learned how to operate the business under them and worked to earn their trust in order to eventually take control.</b> His plans bore fruit when ownership was passed over to him, and he began running Sunshine with the aim to profit as much as possible, leading to a decline in quality of employee treatment and Yuki's resignation. The [[Kanzaki Group]] was formed to gain control over [[Sotenbori]]'s nightlife, and Youda eventually joined by telling Kanzaki he was won over by his moneymaking methods. ==Involvement==
+===Yakuza Kiwami 2: 2006===
+Kanzaki convinces the new manager of Yuki's Club [[Four Shine]], Kiritani, to work for him at Club Sunshine by paying him double the amount of Four Shine's payment, leaving Club Four Shine with no manager., Score: 6.692539
+Text: ==Walkthrough ==
+=== [[Yakuza]] ===
+Unlike in previous encounters, the thugs will get scared and leave, under the excuse of "being on a walk". There will be no fight, and Kiryu will earn experience right away. === [[Yakuza Kiwami]] ===
+After finding the thugs at the usual spot and watching the cutscene, Kiryu must beat them one last time. <b>After that, he will earn 20.000 experience points.</b> ==Gallery==
+&lt;gallery&gt;
+Bump and Scam Epilogue 1.jpg
+Bump and Scam Epilogue 3.jpg
+Bump and Scam Epilogue 4.jpg
+Bump and Scam Epilogue 5.jpg
+Bump and Scam Epilogue 6.jpg
+&lt;/gallery&gt;
+
+
+
+
+[[Category:Yakuza Kiwami Substories]]
+[[Category:Missions]]
+[[Category:Yakuza Missions]]</text>
+      <sha1>shaxs3jvl46gywwwbfnb0esq7re5sdu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Con-tacts</title>
+    <ns>0</ns>
+    <id>19890</id>
+    <revision>
+      <id>145297</id>
+      <parentid>122617</parentid>
+      <timestamp>2023-07-02T07:36:39Z</timestamp>
+      <contributor>
+        <username>Seddielover12</username>
+        <id>3539243</id>
+      </contributor>
+      <origin>145297</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1126" sha1="k4jz5n3wm6cpjnr4mniikgnsvo0yrhr" xml:space="preserve">{{Stub}}
+{{Substory infobox 
+| image = Con-tacts.jpg
+| caption =
+| number = 21
+| location = Nakamichi Alley
+| start =
+| end =
+| previous = [[Bump and Scam: Epilogue]]
+| next = [[The Little Match Girl]]
+}}
+'''Con-tacts''' is the 21st substory in ''[[Yakuza Kiwami]]''. ==Plot==
+
+
+Kiryu steps onto something and a con artist claims that Kiryu stepped onto his expensive contact lenses that were made in Germany. The con artist then demands either 200,000 Yen or to fight him., Score: 6.4344215
+Text: The only thing Hyuga values are the strongest. But this raised Tatsuya's confidence a little bit, saying he will crush him, kill him. But Saki is telling that Tatsuya doesn't understands on what she tries to say. <b>Taizan arrived and questions Tatsuya on how much did he learned from Tomoki?</b> He stated that he has to learn something from fighting. If Tatsuya can't learn anything from fighting with Tomoki, then he won't be able to beat Hyuga. ==Gallery==
+
+
+{{EndSpoilers}}
+
+[[Category:Chapter Summaries]]
+[[Category:Kurohyou: Ryu Ga Gotoku Shinsho Chapter Summaries]]</text>
+      <sha1>o1bfknhxds74uvcwjwexxeb1bsyagh0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Kurohyou: Ryu Ga Gotoku Shinsho/Chapter 2</title>
+    <ns>0</ns>
+    <id>34591</id>
+    <revision>
+      <id>145031</id>
+      <parentid>139889</parentid>
+      <timestamp>2023-06-26T18:32:31Z</timestamp>
+      <contributor>
+        <username>RGGWikiBot</username>
+        <id>48384421</id>
+      </contributor>
+      <comment>/* top */categorization, replaced: |image= â�� | img =</comment>
+      <origin>145031</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="9542" sha1="fpzcv7ltq0sz91cytwv2uuholq8v7zp" xml:space="preserve">{{Chapter Infobox
+|title = The Strongest Proof
+|jp = æ��å¼·ã�®è¨¼æ��
+|rom = SaikyÅ� no ShÅ�mei
+| img =
+|previous = [[Kurohyou: Ryu Ga Gotoku Shinsho/Chapter 1|Chapter 1]]
+|next = [[Kurohyou: Ryu Ga Gotoku Shinsho/Chapter 3|Chapter 3]]
+}}
+'''The Strongest Proof''' ({{JP|æ��å¼·ã�®è¨¼æ��}}, ''SaikyÅ� no ShÅ�mei'') is the second chapter of ''[[Kurohyou: Ryu Ga Gotoku Shinsho]]''., Score: 6.387838
+Text: The only thing Hyuga values are the strongest. But this raised Tatsuya's confidence a little bit, saying he will crush him, kill him. But Saki is telling that Tatsuya doesn't understands on what she tries to say. <b>Taizan arrived and questions Tatsuya on how much did he learned from Tomoki?</b> He stated that he has to learn something from fighting. If Tatsuya can't learn anything from fighting with Tomoki, then he won't be able to beat Hyuga. -- Chapter 2: The Strongest Proof
+
+Later, Tatsuya has got some time before his next match., Score: 6.3296556
+Text: Adding to Motomiya's remark that their roles were basically reversed, Yamaguchi said his character in ''Nihon Touitsu'', Yuto Tamura, was more like [[Goro Majima]], whereas Motomiya's character, Renji Himuro, was more like Kiryu. Indirectly comparing Tsuruno to Kiryu and Shishido to Majima, he thought the reversal was refreshing. Lastly, he was asked what the highlight of working on the game was, and according to him, it may have been recording his voice lines for the minigames. <b>Although he did not yet know how everything would come together, he hoped fans would look forward to it, since neither he nor Motomiya had ever done anything like that before.</b> From July 5, 2023 to July 19, 2023, a series of interviews titled "Heated Discussions" were uploaded to YouTube by Ryu Ga Gotoku Studio. Yamaguchi's was uploaded on July 12, 2023. It featured behind-the-scenes footage of Yamaguchi recording his voice lines for Tsuruno followed by an interview in which he was asked about being cast for the role, the script, the recording session, and his character, ending with a message for the fans., Score: 6.3173475
+Text: However, Matsushige ends up earning more power and respect from Nishikiyama's subordinates than Nishikiyama himself. One day, Nishikiyama is desperate to raise funds to pay for a heart surgery needed by his sister [[Yuko Nishikiyama]]. A doctor, [[Kiminobu Hiyoshi]], is willing to help as long as Nishikiyama pays him 30 million yen, causing Nishikiyama to beg and grovel for Matsushige's assistance to get the money. <b>Much to Nishikiyama's anger, Matsushige earns it by robbing stores from [[Osamu Kashiwagi]]'s territory, as he was told to earn the money in any way possible; Matsuhige did this intentionally, correctly predicting that it would lead Nishikiyama to being punished by Kashiwagi.</b> Matsushige was eventually able to help Nishikiyama reach the 30 million goal, however, Hiyoshi was actually a fraud who used the 30 million yen to pay his gambling debts. After this, Yuko dies. Later, Matsushige enters the room of a currently-mourning Nishikiyama who is about to commit seppuku and asks for permission to expand business, but further insults him by calling him inept and comparing him to Kiryu., Score: 6.1829567
+Text: The club also expanded into gray territory, later giving rise to Crimson Lotus around Kenmochi while Sadamoto started his own business. As he likely made enemies from participating in both sides of the law, Crimson Lotus helped him "deal" with them. Eventually, the business found itself in dire straits, which is when he targeted the Natsume family. <b>*'''How did Mikiko catch on?'''</b> : Two years ago, Sadamoto had returned home drunk, which was rare for him, and fell asleep with his computer unlocked. Mikiko saw an email exchange with Kenmochi, then searched Sadamoto's inbox for more information. When Sadamoto woke up, he realized what Mikiko saw., Score: 6.1183352
+Text: Taizan agrees that's one of the things Tatsuya was missing. He explains further that there are two choices, attack or running away. Like Saki said, Tatsuya must have a plan. <b>Not only that, Taizan stated Tatsuya must also find a purpose in fighting, just like how Yuki did.</b> Later, Tatsuya met up with Yuki again, saying he wants to learn the guard in aikido. Yuki said it will be hard and Tatsuya will have to pay him, which he will. Tatsuya asks if Yuki's coming back to Dragon Heat, which he planned to, but changed his mind since he doesn't have a reason to come here anymore., Score: 6.0521393
+
+Summary:
+Kanzaki earned his nickname through his strategic actions in the world of entertainment and nightlife. He worked at Club Sunshine under Yuki and Youda, learning the business and gaining their trust to eventually take control [3]. Upon becoming the owner of Club Sunshine, he focused on maximizing profits, leading to a decline in employee treatment and Yuki's resignation. Kanzaki formed the Kanzaki Group to dominate Sotenbori's nightlife scene, showcasing his ambition and business acumen [3]. His calculated moves and successful takeover of the club earned him the reputation and title associated with his nickname.

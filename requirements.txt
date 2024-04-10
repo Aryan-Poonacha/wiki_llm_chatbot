@@ -9,3 +9,4 @@ langchain-pinecone
 langchain-openai
 unstructured
 python-dotenv
+streamlit
