@@ -44,14 +44,14 @@ background-size: cover;
 </style>
 """
 
-st.markdown(background_style, unsafe_allow_html=True)
-
 st.session_state["corpus_number"] = st.secrets["VECTARA_CORPUS_ID"]
 st.session_state["vectara_api_key"] = st.secrets["VECTARA_API_KEY"]
 st.session_state["vectara_customer_id"] = st.secrets["VECTARA_CUSTOMER_ID"]
 
 # Streamlit page configuration
 st.set_page_config(page_title="Yakuza Chatbot", page_icon="⛩️")
+
+st.markdown(background_style, unsafe_allow_html=True)
 
 # Add logo and title
 st.image("assets/logo.png", use_column_width=True)
