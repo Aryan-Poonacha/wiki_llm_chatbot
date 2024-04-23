@@ -56,7 +56,7 @@ st.session_state["vectara_api_key"] = st.secrets["VECTARA_API_KEY"]
 st.session_state["vectara_customer_id"] = st.secrets["VECTARA_CUSTOMER_ID"]
 
 # Streamlit page configuration
-#st.set_page_config(page_title="Yakuza Chatbot", page_icon="⛩️",  layout="centered", initial_sidebar_state="auto", menu_items={"About" : "Made by Aryan Poonacha"})
+st.set_page_config(page_title="Yakuza Chatbot", page_icon="⛩️",  layout="centered", initial_sidebar_state="auto", menu_items={"About" : "Made by Aryan Poonacha"})
 st.markdown(css, unsafe_allow_html=True)
 
 # Add logo and title
