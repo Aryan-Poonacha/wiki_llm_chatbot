@@ -28,21 +28,25 @@ def get_latest_conversation_id(api_key, customer_id):
         else None
     )
 
-def get_image_as_base64(image_path):
-    with open(image_path, "rb") as img_file:
-        return base64.b64encode(img_file.read()).decode()
 
-background_image_path = "assets/background.png"
-background_image_base64 = get_image_as_base64(background_image_path)
+@st.cache(allow_output_mutation=True)
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
-background_style = f"""
-<style>
-body {{
-background-image: url("data:image/png;base64,{background_image_base64}");
-background-size: cover;
-}}
-</style>
-"""
+def set_png_as_page_bg(png_file):
+    bin_str = get_base64_of_bin_file(png_file)
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("data:image/png;base64,%s");
+    background-size: cover;
+    }
+    </style>
+    ''' % bin_str
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 st.session_state["corpus_number"] = st.secrets["VECTARA_CORPUS_ID"]
 st.session_state["vectara_api_key"] = st.secrets["VECTARA_API_KEY"]
@@ -51,7 +55,7 @@ st.session_state["vectara_customer_id"] = st.secrets["VECTARA_CUSTOMER_ID"]
 # Streamlit page configuration
 st.set_page_config(page_title="Yakuza Chatbot", page_icon="⛩️")
 
-st.markdown(background_style, unsafe_allow_html=True)
+set_png_as_page_bg('assets/background.png')
 
 # Add logo and title
 st.image("assets/logo.png", use_column_width=True)
