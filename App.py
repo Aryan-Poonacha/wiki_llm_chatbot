@@ -130,4 +130,4 @@ with st.container():
 
     # Display chat messages
     for idx, msg in enumerate(st.session_state.messages):
-        message(msg["content"], is_user=msg["role"] == "user", key=f"chat_message_{idx}", avatar_style="adventurer")
+        message(msg["content"], is_user=msg["role"] == "user", key=f"chat_message_{idx}", avatar='https://steamuserimages-a.akamaihd.net/ugc/2020469211357336853/DE24268BA93B8001A29CB5E0B0677C2A4A4C5E43/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false')
