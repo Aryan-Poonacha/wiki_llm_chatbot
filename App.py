@@ -71,7 +71,7 @@ with stylable_container(
             border: 1px solid #323232;  /* Dark grey thin border */
             box-shadow: 0 0 10px #323232;  /* Subtle 3D effect */
             border-radius: 0.5rem;
-            padding: 100px;
+            padding: 50px 500px;
 
         }
     """,
