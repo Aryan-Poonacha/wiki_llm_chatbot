@@ -6,6 +6,7 @@ import streamlit as st
 from streamlit_chat import message
 from dotenv import load_dotenv
 import random
+from streamlit_extras.stylable_container import stylable_container
 
 load_dotenv()
 
@@ -61,7 +62,16 @@ st.markdown(css, unsafe_allow_html=True)
 
 
 # Create a container for the Streamlit components
-with st.container():
+with stylable_container(
+    key="custom_container",
+    css_styles="""
+        {
+            background-color: black;
+            border: 1px solid #323232;  /* Dark grey thin border */
+            box-shadow: 0 0 10px #323232;  /* Subtle 3D effect */
+        }
+    """,
+):
     # Add logo and title
     st.image("assets/logo.png", use_column_width=True)
     st.title("Yakuza Chatbot")
