@@ -5,7 +5,7 @@ import requests
 import streamlit as st
 from streamlit_chat import message
 from dotenv import load_dotenv
-import base64
+import random
 
 load_dotenv()
 
@@ -28,13 +28,22 @@ def get_latest_conversation_id(api_key, customer_id):
         else None
     )
 
+image_urls = [
+    'https://r4.wallpaperflare.com/wallpaper/463/1005/316/video-game-yakuza-kazuma-kiryu-hd-wallpaper-3920e84d31aa6dbb46e718df2031962d.jpg',
+    'https://r4.wallpaperflare.com/wallpaper/15/109/290/video-game-yakuza-goro-majima-hd-wallpaper-a98058bd01caddebf657488f504106bd.jpg',
+    'https://r4.wallpaperflare.com/wallpaper/358/131/812/yakuza-yakuza-series-yakuza-wallpaper-1950480d018a5d0b16c7887f60f1963d.jpg',
+    'https://r4.wallpaperflare.com/wallpaper/565/26/464/video-game-yakuza-dead-souls-wallpaper-a940582d215aadcb967748dfd071c61d.jpg'
+]
 
+# Choose a random image URL from the list
+chosen_image_url = random.choice(image_urls)
+
+# Update the CSS to use the chosen image URL as the background image
 css = f'''
     <style>
         .stApp {{
-            background-image: url("https://r4.wallpaperflare.com/wallpaper/610/743/684/yakuza-dragon-of-dojima-yakuza-kiwami-2-hd-wallpaper-8940885d31fa7d1b26b7e8afc09146fd.jpg");
+            background-image: url("{chosen_image_url}");
             background-size: cover;
-
         }}
         .stApp > header {{
             background-color: transparent;
