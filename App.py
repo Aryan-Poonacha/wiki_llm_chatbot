@@ -130,4 +130,4 @@ with st.container():
 
     # Display chat messages
     for idx, msg in enumerate(st.session_state.messages):
-        message(msg["content"], is_user=msg["role"] == "user", key=f"chat_message_{idx}", avatar_style="notionists")
+        message(msg["content"], is_user=msg["role"] == "user", key=f"chat_message_{idx}", avatar_style="adventurer")
