@@ -1,4 +1,3 @@
-
 import os
 import json
 import logging
@@ -6,6 +5,7 @@ import requests
 import streamlit as st
 from streamlit_chat import message
 from dotenv import load_dotenv
+import base64
 
 load_dotenv()
 
@@ -27,6 +27,24 @@ def get_latest_conversation_id(api_key, customer_id):
         if response_data and "conversation" in response_data
         else None
     )
+
+def get_image_as_base64(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+background_image_path = "assets/background.jpg"
+background_image_base64 = get_image_as_base64(background_image_path)
+
+background_style = f"""
+<style>
+body {{
+background-image: url("data:image/png;base64,{background_image_base64}");
+background-size: cover;
+}}
+</style>
+"""
+
+st.markdown(background_style, unsafe_allow_html=True)
 
 st.session_state["corpus_number"] = st.secrets["VECTARA_CORPUS_ID"]
 st.session_state["vectara_api_key"] = st.secrets["VECTARA_API_KEY"]
