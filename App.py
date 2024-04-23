@@ -29,16 +29,18 @@ def get_latest_conversation_id(api_key, customer_id):
     )
 
 
-
-page_bg_img = '''
+css = f'''
     <style>
-    body {
-    background-image: url("https://r4.wallpaperflare.com/wallpaper/610/743/684/yakuza-dragon-of-dojima-yakuza-kiwami-2-hd-wallpaper-8940885d31fa7d1b26b7e8afc09146fd.jpg");
-    background-size: cover;
-    }
+        .stApp {{
+            background-image: url("https://r4.wallpaperflare.com/wallpaper/610/743/684/yakuza-dragon-of-dojima-yakuza-kiwami-2-hd-wallpaper-8940885d31fa7d1b26b7e8afc09146fd.jpg");
+            background-size: cover;
+
+        }}
+        .stApp > header {{
+            background-color: transparent;
+        }}
     </style>
     '''
-
 
 st.session_state["corpus_number"] = st.secrets["VECTARA_CORPUS_ID"]
 st.session_state["vectara_api_key"] = st.secrets["VECTARA_API_KEY"]
@@ -46,8 +48,7 @@ st.session_state["vectara_customer_id"] = st.secrets["VECTARA_CUSTOMER_ID"]
 
 # Streamlit page configuration
 #st.set_page_config(page_title="Yakuza Chatbot", page_icon="⛩️",  layout="centered", initial_sidebar_state="auto", menu_items={"About" : "Made by Aryan Poonacha"})
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(css, unsafe_allow_html=True)
 
 # Add logo and title
 st.image("assets/logo.png", use_column_width=True)
