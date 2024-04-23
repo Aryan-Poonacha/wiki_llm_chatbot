@@ -38,7 +38,7 @@ background_image_base64 = get_image_as_base64(background_image_path)
 background_style = f"""
 <style>
 body {{
-background-image: url("data:image/png;base64,{background_image_base64}");
+background-image: url("data:image/jpg;base64,{background_image_base64}");
 background-size: cover;
 }}
 </style>
