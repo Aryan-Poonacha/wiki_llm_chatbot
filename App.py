@@ -32,8 +32,8 @@ def get_latest_conversation_id(api_key, customer_id):
 image_urls = [
     'https://r4.wallpaperflare.com/wallpaper/463/1005/316/video-game-yakuza-kazuma-kiryu-hd-wallpaper-3920e84d31aa6dbb46e718df2031962d.jpg',
     'https://r4.wallpaperflare.com/wallpaper/15/109/290/video-game-yakuza-goro-majima-hd-wallpaper-a98058bd01caddebf657488f504106bd.jpg',
-    'https://r4.wallpaperflare.com/wallpaper/358/131/812/yakuza-yakuza-series-yakuza-wallpaper-1950480d018a5d0b16c7887f60f1963d.jpg',
-    'https://r4.wallpaperflare.com/wallpaper/565/26/464/video-game-yakuza-dead-souls-wallpaper-a940582d215aadcb967748dfd071c61d.jpg'
+    #'https://r4.wallpaperflare.com/wallpaper/358/131/812/yakuza-yakuza-series-yakuza-wallpaper-1950480d018a5d0b16c7887f60f1963d.jpg',
+    #'https://r4.wallpaperflare.com/wallpaper/565/26/464/video-game-yakuza-dead-souls-wallpaper-a940582d215aadcb967748dfd071c61d.jpg'
 ]
 
 # Choose a random image URL from the list
@@ -60,6 +60,7 @@ st.session_state["vectara_customer_id"] = st.secrets["VECTARA_CUSTOMER_ID"]
 st.set_page_config(page_title="Yakuza Chatbot", page_icon="⛩️",  layout="centered", initial_sidebar_state="auto", menu_items={"About" : "Made by Aryan Poonacha"})
 st.markdown(css, unsafe_allow_html=True)
 
+st.image("assets/logo.png", use_column_width=True)
 
 # Create a container for the Streamlit components
 with stylable_container(
@@ -75,8 +76,7 @@ with stylable_container(
         }
     """,
 ):
-    # Add logo and title
-    st.image("assets/logo.png", use_column_width=True)
+    # Add logo and titlwe
     st.title("Yakuza Chatbot")
     st.markdown("Ask me any questions about anything and everything Yakuza!")
 
