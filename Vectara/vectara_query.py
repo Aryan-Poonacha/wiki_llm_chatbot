@@ -2,7 +2,7 @@ import os
 import json
 import requests
 from dotenv import load_dotenv
-from Vectara.query import *
+#from query import *
 
 class VectaraAPI:
     def __init__(self):
@@ -79,11 +79,7 @@ class VectaraAPI:
               f.write(summary_text)
         return summary_text, top_responses
 
-    def chat(self, query_prompt, conversation_id=""):
-        if conversation_id != "":
-            convo_id = conversation_id
-        else:
-            convo_id = self.conversation_id
+    def chat(self, query_prompt):
         payload = json.dumps({
                       "query": [
                     {
@@ -121,7 +117,7 @@ class VectaraAPI:
                           {
                               "chat": {
                                   "store": True,
-                                  "conversationId": convo_id
+                                  "conversationId": self.conversation_id
                               },
                               "maxSummarizedResults": 3,
                               "responseLang": "en",

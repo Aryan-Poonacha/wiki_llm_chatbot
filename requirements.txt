@@ -9,4 +9,6 @@ langchain-pinecone
 langchain-openai
 unstructured
 python-dotenv
+requests
 streamlit
+streamlit-chat

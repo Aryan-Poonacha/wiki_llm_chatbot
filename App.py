@@ -1,58 +1,106 @@
-from dotenv import load_dotenv
 
-from pubnub.callbacks import SubscribeCallback
-from pubnub.enums import PNStatusCategory, PNOperationType
-from pubnub.pnconfiguration import PNConfiguration
-from pubnub.pubnub import PubNub
 import os
+import json
+import logging
+import requests
+import streamlit as st
+from streamlit_chat import message
+from dotenv import load_dotenv
 
 load_dotenv()
 
-pnconfig = PNConfiguration()
+def get_latest_conversation_id(api_key, customer_id):
+    """Retrieves the latest conversation ID from Vectara."""
+    response = requests.post(
+        "https://api.vectara.io/v1/list-conversations",
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "customer-id": customer_id,
+            "x-api-key": api_key,
+        },
+        data=json.dumps({"numResults": 0, "pageKey": ""}),
+    )
+    response_data = response.json()
+    return (
+        response_data["conversation"][-1]["conversationId"]
+        if response_data and "conversation" in response_data
+        else None
+    )
 
-pnconfig.subscribe_key = os.getenv('SUBSCRIBE_KEY')
-pnconfig.publish_key = os.getenv('PUBLISH_KEY')
-pnconfig.user_id = os.getenv('USER_ID')
-pubnub = PubNub(pnconfig)
+st.session_state["corpus_number"] = st.secrets["VECTARA_CORPUS_ID"]
+st.session_state["vectara_api_key"] = st.secrets["VECTARA_API_KEY"]
+st.session_state["vectara_customer_id"] = st.secrets["VECTARA_CUSTOMER_ID"]
 
-channel_name = 'pubnub-docs-ai'
+# Streamlit page configuration
+st.set_page_config(page_title="Yakuza Chatbot", page_icon="⛩️")
 
-prompt = 'Who is the Dragon of Dojima?'
+# Add logo and title
+st.image("assets/logo.png", use_column_width=True)
+st.title("Yakuza Chatbot")
+st.markdown("Ask me any questions about anything and everything Yakuza!")
 
-def my_publish_callback(envelope, status):
-    # Check whether request successfully completed or not
-    if not status.is_error():
-        pass  # Message successfully published to specified channel.
-    else:
-        pass  # Handle message publish error. Check 'category' property to find out possible issue
-        # because of which request did fail.
-        # Request can be resent using: [status retry];
+# Chat message handling
+if "messages" not in st.session_state:
+    st.session_state["messages"] = []
 
-class MySubscribeCallback(SubscribeCallback):
-    def presence(self, pubnub, presence):
-        pass  # handle incoming presence data
+with st.form("chat_input", clear_on_submit=True):
+    user_prompt = st.text_input("Your message:", label_visibility="collapsed")
+    if st.form_submit_button("Send"):
+        st.session_state.messages.append({"role": "user", "content": user_prompt})
 
-    def status(self, pubnub, status):
-        if status.category == PNStatusCategory.PNUnexpectedDisconnectCategory:
-            pass  # This event happens when radio / connectivity is lost
+if user_prompt and st.session_state["vectara_api_key"]:
+    conversation_id = get_latest_conversation_id(
+        st.session_state["vectara_api_key"], st.session_state["vectara_customer_id"]
+    )
+    response = requests.post(
+        "https://api.vectara.io/v1/query",
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "customer-id": st.session_state["vectara_customer_id"],
+            "x-api-key": st.session_state["vectara_api_key"],
+        },
+        data=json.dumps(
+            {
+                "query": [
+                    {
+                        "query": user_prompt,
+                        "start": 0,
+                        "numResults": 3,
+                        "contextConfig": {
+                            "sentences_before": 3,
+                            "sentences_after": 3,
+                            "start_tag": "<response>",
+                            "end_tag": "</response>",
+                        },
+                        "corpusKey": [{"corpus_id": st.session_state["corpus_number"]}],
+                        "summary": [
+                            {"max_summarized_results": 3, "response_lang": "en"}
+                        ],
+                        "chat": {"store": True, "conversationId": conversation_id},
+                    }
+                ]
+            }
+        ),
+    )
+    query_response = response.json()
 
-        elif status.category == PNStatusCategory.PNConnectedCategory:
-            # Connect event. You can do stuff like publish, and know you'll get it.
-            # Or just use the connected event to confirm you are subscribed for
-            # UI / internal notifications, etc
-            pubnub.publish().channel(channel_name).message(prompt).pn_async(my_publish_callback)
-        elif status.category == PNStatusCategory.PNReconnectedCategory:
-            pass
-            # Happens as part of our regular operation. This event happens when
-            # radio / connectivity is lost, then regained.
-        elif status.category == PNStatusCategory.PNDecryptionErrorCategory:
-            pass
-            # Handle message decryption error. Probably client configured to
-            # encrypt messages and on live data feed it received plain text.
+    if query_response["responseSet"] and query_response["responseSet"][0]["response"]:
+        score = query_response["responseSet"][0]["response"][0]["score"]
+        first_response = query_response["responseSet"][0]["summary"][0]["text"]
 
-    def message(self, pubnub, message):
-        # Handle new message stored in message.message
-        print(message.message)
+        if (
+            score < 0.65
+            or "The returned results did not contain sufficient information"
+            in first_response
+        ):
+            st.write("I'm not sure I have enough information to provide an answer to that question.")
 
-pubnub.add_listener(MySubscribeCallback())
-pubnub.subscribe().channels(channel_name).execute()
+        st.session_state.messages.append(
+            {"role": "assistant", "content": first_response}
+        )
+
+# Display chat messages
+for idx, msg in enumerate(st.session_state.messages):
+    message(msg["content"], is_user=msg["role"] == "user", key=f"chat_message_{idx}")
