@@ -69,7 +69,9 @@ with stylable_container(
             background-color: black;
             border: 1px solid #323232;  /* Dark grey thin border */
             box-shadow: 0 0 10px #323232;  /* Subtle 3D effect */
-            padding: 50px;  /* Increase size in all 4 directions */
+            border-radius: 0.5rem;
+            padding: calc(1em - 1px)
+
         }
     """,
 ):
