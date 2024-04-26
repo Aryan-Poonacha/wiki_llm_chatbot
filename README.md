@@ -11,7 +11,7 @@ The objective of this project is to develop a functioning "proof of concept" app
 1. Clone this repository.
 2. Install the required dependencies listed in `requirements.txt`.
 
-## Project Pipeline
+## Project Pipeline & Replication Instructions
 
 The project pipeline involves the following steps:
 
@@ -22,7 +22,9 @@ This project uses [Vectara](https://vectara.com/) and [Pinecone](https://www.pin
 1. **Data Acquisition**: To get the data from the relevant wiki/knowledge base, follow the steps for the following sources:
 
 Wikipedia: You can get the download URLs for Wikipedia pages in XML format from [this](https://en.wikipedia.org/wiki/Wikipedia:Database_download) guide. A text dump of relevant Wikipedia articles is also easy to access.
+
 [Fandom](https://wikis.fandom.com/wiki/List_of_Wikia_wikis): The URL to download the relevant wiki's entire knowledge base as a single XML file can be found in the Sepcial:Statistics page of that wiki. For example, [this](https://yakuza.fandom.com/wiki/Special:Statistics) is the page that contains the download URLs to Yakuza's wiki,
+
 [Internet Archive](https://archive.org/details/wikiteam?tab=collection): Contains a number of archived wikis from a broad range of topics. Use the URL for the 7Z option in the Download options for the wiki you desire.
 
 Save these URLs and replace the URL list in `extract_data.py`.
