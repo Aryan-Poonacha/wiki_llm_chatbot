@@ -63,19 +63,33 @@ Ultimately, the Base Llama-38B-Instruct with the Vectara RAG mechanism performed
 The project repo is organized as follows:
 
 ├── README.md <- description of project and how to set up and run it
+
 ├── requirements.txt <- requirements file to document dependencies
+
 ├── vectara_setup.py <- script to set up project (load data from Data directory into Vectara backend)
+
 ├── pinecone_setup.py <- script to set up project (load data from Data dir into Pinecone backend)
+
 ── app.py <- streamlit frontend interface component
+
 ├── scripts <- misc scripts for loading data
+
 ├── pinecone_scripts <- directory for pipeline & utility scripts for pinecone
+
 ├── vectara_scripts <- directory for pipeline & utility scripts for vectara
+
 ├── finetuning <- scripts for finetuning of llama-3 model
+
 ├── llama3 <- model used in this project
+
 ├── non-dl-models <- directory for scripts used for baseline and non-deep learning approaches
+
 ├── Data <- directory for project data
+
 ├── Experiments <- different scripts for different components experimented with (like using pubnub as intermediary messenger between Vectara backend, HuggingFace endpoint and streamlit frontend)
+
 ├── questions.txt <- test dataset of manually compiled complex queries
+
 ├── .gitignore <- git ignore file
 
 ## License
