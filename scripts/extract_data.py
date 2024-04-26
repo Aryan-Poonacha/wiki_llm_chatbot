@@ -14,8 +14,6 @@ def download_and_extract(url, extract_path):
         z.extractall(path=extract_path)
     os.remove(file_name)
 
-
-#Find URLs at Statistics page of Fandom: https://yakuza.fandom.com/wiki/Special:Statistics 
 urls = [
     'https://s3.amazonaws.com/wikia_xml_dumps/y/ya/yakuza_pages_current.xml.7z',
     'https://s3.amazonaws.com/wikia_xml_dumps/y/ya/yakuza_pages_full.xml.7z'
