@@ -62,6 +62,7 @@ Ultimately, the Base Llama-38B-Instruct with the Vectara RAG mechanism performed
 
 The project repo is organized as follows:
 
+```
 ├── README.md <- description of project and how to set up and run it
 
 ├── requirements.txt <- requirements file to document dependencies
@@ -91,6 +92,7 @@ The project repo is organized as follows:
 ├── questions.txt <- test dataset of manually compiled complex queries
 
 ├── .gitignore <- git ignore file
+```
 
 ## License
 
