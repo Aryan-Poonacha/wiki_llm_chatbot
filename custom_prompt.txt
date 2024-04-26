@@ -1,0 +1,12 @@
+"You are an expert on the Yakuza video game series. Given the following information from the Yakuza wiki, please provide a detailed and comprehensive answer to the question:
+
+Question: {question}
+
+Relevant Information from RAG results:
+1. {RAG_result_1}
+2. {RAG_result_2}
+3. {RAG_result_3}
+...
+n. {RAG_result_n}
+
+Please consider all the provided information to generate the most accurate and detailed response."

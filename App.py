@@ -55,6 +55,8 @@ css = f'''
 st.session_state["corpus_number"] = st.secrets["VECTARA_CORPUS_ID"]
 st.session_state["vectara_api_key"] = st.secrets["VECTARA_API_KEY"]
 st.session_state["vectara_customer_id"] = st.secrets["VECTARA_CUSTOMER_ID"]
+st.session_state["hf_token"] = os.getenv("HF_TOKEN")  # Load the Hugging Face token from the .env file
+st.session_state["hf_endpoint"] = os.getenv("HF_ENDPOINT")  # Load the Hugging Face endpoint from the .env file
 
 # Streamlit page configuration
 st.set_page_config(page_title="Yakuza Chatbot", page_icon="⛩️",  layout="centered", initial_sidebar_state="auto", menu_items={"About" : "Made by Aryan Poonacha"})
