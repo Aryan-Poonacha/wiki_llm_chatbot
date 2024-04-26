@@ -33,6 +33,25 @@ If the data is not accessible/difficult to obtain a download link for, you can a
 
 3. **HuggingFace Model Endpoint**: 
 
+## Models
+
+### Llama-3-8B
+
+Llama-3-8B was used as the main model for this project as it represents the current SOTA for OS models. Two main variations of the model were used:
+
+1. Base Llama-3-8B-Instruct
+2. Base Llama-3-8B finetuned on [RAG instruct-tuning dataset](https://huggingface.co/datasets/llmware/rag_instruct_benchmark_tester) 
+
+## Evaluation
+
+We want to compare and see which combination of embedding & RAG Mechanism and Model produce the best overall result to fetch most relevant information and effectively summarize it (integration test?); not just individual base model or RAG performance.
+
+I manually compiled a list of complex queries and questions as the test dataset in `questions.txt`. I then manually did human-evaluated comparisons of responses with the different 4 combinations of embedding systems and model used.
+
+For the RAG comparisons, to set a baseline, the baseline mean model approach is to simply search the XML document for relevant information from the search query to use as context. For the non-deep learning approach to use as a comparison, TF-IDF was used to similarly find relevant results to use as context to pass to the model.
+
+Ultimately, the Base Llama-38B-Instruct with the Vectara RAG mechanism performed best and was used for the final deployed model.
+
 ## Project Structure
 
 The project repo is organized as follows:
@@ -42,10 +61,15 @@ The project repo is organized as follows:
 ├── vectara_setup.py <- script to set up project (load data from Data directory into Vectara backend)
 ├── pinecone_setup.py <- script to set up project (load data from Data dir into Pinecone backend)
 ── app.py <- streamlit frontend interface component
-├── scripts <- directory for pipeline & utility scripts
+├── scripts <- misc scripts for loading data
+├── pinecone_scripts <- directory for pipeline & utility scripts for pinecone
+├── vectara_scripts <- directory for pipeline & utility scripts for vectara
+├── finetuning <- scripts for finetuning of llama-3 model
 ├── llama3 <- model used in this project
+├── non-dl-models <- directory for scripts used for baseline and non-deep learning approaches
 ├── Data <- directory for project data
-├── Experiemnts <- different scripts for different components experimented with (like using pubnub as intermediary messenger between Vectara backend, HuggingFace endpoint and streamlit frontend)
+├── Experiments <- different scripts for different components experimented with (like using pubnub as intermediary messenger between Vectara backend, HuggingFace endpoint and streamlit frontend)
+├── questions.txt <- test dataset of manually compiled complex queries
 ├── .gitignore <- git ignore file
 
 ## License
